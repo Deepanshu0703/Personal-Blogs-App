@@ -1,0 +1,12 @@
+<%- include('Header') %> 
+
+<div class="middle">
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <input type="text" id="titles" name="title" placeholder="Title" required>
+        <textarea name="blog" id="blogTextarea" cols="30" rows="10" placeholder="Content" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<%- include('Footer') %>
