@@ -2,10 +2,14 @@
 
 <div class="middle">
     <h1>Post</h1>
-    <div class="days">Day<%=id%></div>
+    <div class="days"><%=days%></div>
     <div class="blogTitle">(<%=title%>)</div>
 
     <p class="para"><%=blog %></p>
+    <form action="/del" method="post">
+        <input type="hidden" value="<%=id%>" name="id">
+        <input type="submit" class="deleteBtn" value="Delete" name="delete">
+    </form>
 </div>
 
 <%- include('Footer') %>

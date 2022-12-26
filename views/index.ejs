@@ -2,9 +2,9 @@
 <div class="middle">
     <% for(var i=0; i<data.length; i++){ %>
 
-    <div class="days">Day<%=i+1%></div>
+    <div class="days"><%= day %> </div>
     <div class="blogTitle">(<%=data[i].title%>)</div>
-    <p class="para"><%= data[i].blogs.substring(0, 50) %> <a href="/blogs/<%= data[i].id %>">Read more......</a></p>
+    <p class="para"><%= data[i].blogs.substring(0, 50) %> <a href="/blogs/<%= data[i]._id %>">Read more......</a></p>
     <% } %>
     </div>
 
