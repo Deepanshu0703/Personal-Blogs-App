@@ -8,17 +8,16 @@ body{
 .navbar{
     background-color: rgb(102, 97, 97);
     box-shadow:  0 0 40px rgba(0,0,0,0.1);
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
+    padding: 40px 20px;
     width: 100%;
     z-index: 999;
-    height:80px;
+    /* height:80px; */
+    margin-bottom:100px ;
 }
 .middle{
     margin-top: 100px;
     margin-bottom: 100px;
-    font-size: 3rem;    
+    /* font-size: 3rem;     */
 }
 
 .navbar .logo{

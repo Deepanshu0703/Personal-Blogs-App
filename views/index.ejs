@@ -1,10 +1,22 @@
 <%- include('Header') %>
-<div class="middle">
+<div class="middle  container row">
     <% for(var i=0; i<data.length; i++){ %>
-
-    <div class="days"><%= day %> </div>
-    <div class="blogTitle">(<%=data[i].title%>)</div>
-    <p class="para"><%= data[i].blogs.substring(0, 50) %> <a href="/blogs/<%= data[i]._id %>">Read more......</a></p>
+            <div class="col-sm-6 my-1">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><%=data[i].title%>(
+                    <%if(data[i].userName){%>
+                      <%=data[i].userName%>
+                    <%}else{%>  
+                      User
+                    <%}%>
+                    )</h5>
+                  <h5 class="card-title"><%= data[i].day %></h5>
+                  <p class="card-text"><%= data[i].blogs.substring(0, 50) %>....</p>
+                  <a href="/blogs/<%= data[i]._id %>" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
     <% } %>
     </div>
 
